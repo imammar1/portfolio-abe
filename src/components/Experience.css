@@ -1,0 +1,138 @@
+.experience-section {
+  background-color: #e4e4e4;
+  padding: 6rem 2rem;
+}
+
+.experience-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.qualification-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.qualification-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qualification-content {
+  max-width: 45%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qualification-content.left {
+  text-align: left;
+  margin-right: auto;
+}
+
+.qualification-content.right {
+  text-align: left;
+  margin-left: auto;
+}
+
+.qualification-item:hover .qualification-content {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.qualification-rounder {
+  width: 13px;
+  height: 13px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.qualification-line {
+  width: 1px;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  left: 50%;
+  top: 23px;
+  transform: translateX(-50%);
+}
+
+.qualification-item:last-child .qualification-line {
+  display: none;
+}
+
+.qualification-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.qualification-content span {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+  padding-right: 2rem;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.qualification-content h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem; /* Reduced font size for the titles */
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.qualification-content .title-icon {
+  margin-right: 0.5rem;
+  color: #333;
+  font-size: 1.2rem; /* Adjusted icon size to match reduced text size */
+}
+
+.experience-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+.experience-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.experience-category .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-category:hover .icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.experience-category:hover span {
+  color: #666;
+  transition: color 0.3s ease;
+}

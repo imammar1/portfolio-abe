@@ -1,0 +1,134 @@
+.contact-section {
+  background-color: #333;
+  color: #fca311;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #fca311;
+  margin-bottom: 3rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5rem; /* Adjusted gap for better spacing */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transition for hover effect */
+}
+
+.contact-item p {
+  margin-left: 0.5rem;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 1.3rem; /* Increased font size */
+  transition: color 0.3s ease; /* Added transition for hover effect */
+}
+
+.contact-item a {
+  color: #fca311;
+  text-decoration: none;
+  font-size: 1.3rem; /* Increased font size */
+  transition: color 0.3s ease; /* Added transition for hover effect */
+}
+
+/* Hover Effects */
+.contact-item:hover p {
+  color: #fca311; /* Change to orange on hover for non-link items */
+}
+
+.contact-item:hover a {
+  color: #fff; /* Change to white on hover for link items */
+}
+
+.contact-item:hover .contact-icon {
+  color: #fca311; /* Change icon color to orange on hover */
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Aligns the form to the left */
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: none;
+  border: 2px solid #555;
+  border-radius: 20px; /* Less curvy corners */
+  color: #fff;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #fca311;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.btn-submit {
+  padding: 1rem 2rem;
+  background-color: #fca311;
+  color: #333;
+  border: none;
+  border-radius: 20px; /* Less curvy corners */
+  font-size: 1.3rem; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+  align-self: center; /* Centers the button within the form */
+}
+
+.btn-submit:hover {
+  background-color: #fff; /* Changes background to white on hover */
+  color: #333; /* Changes text color to dark on hover */
+}
+
+/* Adjust spacing and alignment for icons */
+.contact-item .contact-icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease; /* Added transition for hover effect */
+}

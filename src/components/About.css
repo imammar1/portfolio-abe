@@ -1,0 +1,142 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  gap: 3rem;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+  flex: 1;
+  max-width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-content {
+  flex: 2;
+  padding-left: 2rem; /* Adding some padding to move the content slightly to the right */
+}
+
+.about-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center; /* Center the "About Me" heading */
+}
+
+.about-content .subtitle {
+  font-size: 1.4rem;
+  color: #777;
+  margin-bottom: 2rem;
+  text-align: center; /* Center the "My Introduction" subtitle */
+  margin-top: -0.5rem; /* Slightly lift the "My Introduction" text */
+}
+
+.about-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.detail-item {
+  background-color: #ffffff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the text */
+  flex: 1;
+  display: flex; /* Added to enable flexbox */
+  flex-direction: column; /* Ensures vertical stacking of h4 and p */
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  margin-right: 1rem;
+}
+
+
+.detail-item:last-child {
+  margin-right: 0;
+}
+
+.detail-item h4 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.detail-item p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: left; /* Ensuring the text content is left-aligned */
+}
+
+.btn-download {
+  padding: 0.8rem 2rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-download:hover {
+  background-color: #fca311;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .about-image {
+      margin-bottom: 2rem;
+  }
+
+  .about-details {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .detail-item {
+      width: 80%;
+      margin-bottom: 1rem;
+      margin-right: 0;
+  }
+
+  .about-content p {
+      text-align: center; /* Center the text on smaller screens */
+  }
+}

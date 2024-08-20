@@ -1,0 +1,8 @@
+.footer {
+  padding: 0.5rem; /* Reduced padding for smaller spacing */
+  background-color: #ffffff; /* Changed background color to white */
+  color: #333; /* Text color updated to a dark gray for contrast */
+  text-align: center;
+  font-size: 1rem; /* Adjusted font size for consistency */
+  font-weight: bold; /* Made the text bold */
+}
